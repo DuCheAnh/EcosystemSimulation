@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/background.png" type="Texture" id=1]
+[ext_resource path="res://Scene/Wolf.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/MainScene.gd" type="Script" id=4]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Foods" type="Node2D" parent="."]
+
+[node name="Chickens" type="Node2D" parent="."]
+
+[node name="Wolf" parent="." instance=ExtResource( 2 )]
+position = Vector2( 321, 440 )
