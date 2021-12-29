@@ -17,3 +17,8 @@ centered = false
 
 [node name="Wolf" parent="." instance=ExtResource( 2 )]
 position = Vector2( 321, 440 )
+
+[node name="AddFoodTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="AddFoodTimer" to="." method="_on_AddFoodsTimer_timeout"]
