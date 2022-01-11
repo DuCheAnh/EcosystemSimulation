@@ -5,12 +5,12 @@
 [ext_resource path="res://Scene/Chicken.tres" type="DynamicFont" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 200.0
+radius = 300.0
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 30.0
+radius = 50.0
 
-[node name="Wolf" type="Area2D"]
+[node name="Wolf" type="Area2D" groups=["Wolf"]]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -34,10 +34,10 @@ autostart = true
 [node name="EatTimer" type="Timer" parent="."]
 
 [node name="StatusLabel" type="Label" parent="."]
-margin_left = -18.0
-margin_top = -90.0
-margin_right = 24.0
-margin_bottom = -51.0
+margin_left = -21.0
+margin_top = -119.0
+margin_right = 21.0
+margin_bottom = -80.0
 custom_fonts/font = ExtResource( 3 )
 text = "status
 status"
